@@ -3992,7 +3992,7 @@ input, select, textarea {
     max-width: 37.5em;
     margin: 1.25em auto;
     font-size: 1em;
-    color: var(--text-color, #fff);
+    color: var(--text-color, #e6db74);
     font-family: var(--body-font, "Fira Code", sans-serif);
 }
 
@@ -4029,7 +4029,7 @@ input, select, textarea {
 
     .section-details .text {
         font-size: 16px;
-        color: #fff;
+        color: #e6db74;
         line-height: 1.6;
         text-align: center;
     }
@@ -4051,6 +4051,7 @@ input, select, textarea {
     padding: 5em 0; /* Matches spacing using em */
     background: transparent; /* Consistent with other sections */
     text-align: center;
+    border-bottom: 1px solid #3e3e3e;
 }
 
 .services .heading{
@@ -4076,7 +4077,7 @@ input, select, textarea {
     max-width: 37.5em;
     margin: 1.25em auto;
     font-size: 1em;
-    color: var(--text-color, #fff);
+    color: #e6db74;
     font-family: var(--body-font, "Fira Code", sans-serif);
 }
 
