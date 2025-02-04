@@ -4108,3 +4108,46 @@ input, select, textarea {
 .service-list h2:nth-child(3) .highlight-design{
     color: rgb(230, 219, 116);
 }
+
+/* Adjusts layout for tablets */
+@media screen and (max-width: 1024px) {
+    .section-about, .section-services {
+        padding: 4em 2em; /* Reduce padding */
+        text-align: center;
+    }
+
+    .section-about .container, .section-services .container {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+    }
+
+    .section-about .column, .section-services .column {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Adjusts layout for mobile devices */
+@media screen and (max-width: 768px) {
+
+    .section-title{
+        font-size: 2em;
+    }
+
+    .service-list h2{
+        font-size: 2.8em;
+    }
+
+    .section-about .description, .section-services .text {
+        font-size: 1em; /* Make text readable */
+        line-height: 1.5;
+    }
+
+    .button-wrapper {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .button {
+        width: 40%; /* Make button wider */
+    }
+}
