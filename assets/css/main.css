@@ -4131,6 +4131,48 @@ input, select, textarea {
 
     /* top , right, bottom, left */
 
+    /* About & services */
+
+    .section-about .description, .section-services .text {
+        font-size: 1em; /* Make text readable */
+        line-height: 1.5;
+    }
+
+    .section-about .heading, .section-about .text{
+        font-size: 1.06em;
+    }
+
+    .button-wrapper {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .button {
+        width: 50%; /* Make button wider */
+    }
+
+    /* About section */
+
+    .section-about{
+        padding: 0.1em;
+    }
+
+        .section-about .container{
+            padding: 8em 4em 2em 4em;
+        }
+
+        .section-details{
+            padding: 0;
+        }
+
+        .section-details .column{
+            padding: 2em 2em 2em 2em;
+        }
+
+        
+
+    /* Services section */   
+
     .section-title{
         font-size: 2em;
     }
@@ -4139,39 +4181,5 @@ input, select, textarea {
         font-size: 2em;
     }
 
-    .section-about .description, .section-services .text {
-        font-size: 1em; /* Make text readable */
-        line-height: 1.5;
-        
-    }
-
-    .section-about .heading, .section-about .text{
-        font-size: 1.06em;
-    }
-
-    .section-about{
-        padding: 0.1em;
-    }
-
-    .section-details{
-        padding: 0;
-    }
-
-    .section-details .column{
-        padding: 2em 2em 2em 2em;
-    }
-
-    .section-about .container{
-        padding: 8em 4em 2em 4em;
-    }
-
     
-    .button-wrapper {
-        font-size: 1em;
-        text-align: center;
-    }
-
-    .button {
-        width: 40%; /* Make button wider */
-    }
 }
