@@ -632,7 +632,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #242629;
+			background: #292929;
 		}
 
 		select:focus::-ms-value {
@@ -998,13 +998,13 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #36383c;
+			border: solid 1px #292929;
 			border-left: 0;
 			border-right: 0;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: #34363b;
+				background-color: #292929;
 			}
 
 		table td {
@@ -1548,7 +1548,7 @@ input, select, textarea {
 						}
 
 						#header nav > ul > li a.active {
-							background-color: #242629;
+							background-color: #292929;
 						}
 
 	@media screen and (max-width: 736px) {
