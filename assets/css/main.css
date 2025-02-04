@@ -4129,6 +4129,8 @@ input, select, textarea {
 /* Adjusts layout for mobile devices */
 @media screen and (max-width: 768px) {
 
+    /* top , right, bottom, left */
+
     .section-title{
         font-size: 2em;
     }
@@ -4140,8 +4142,30 @@ input, select, textarea {
     .section-about .description, .section-services .text {
         font-size: 1em; /* Make text readable */
         line-height: 1.5;
+        
     }
 
+    .section-about .heading, .section-about .text{
+        font-size: 1.06em;
+    }
+
+    .section-about{
+        padding: 0.1em;
+    }
+
+    .section-details{
+        padding: 0;
+    }
+
+    .section-details .column{
+        padding: 2em 2em 2em 2em;
+    }
+
+    .section-about .container{
+        padding: 8em 4em 2em 4em;
+    }
+
+    
     .button-wrapper {
         font-size: 1em;
         text-align: center;
