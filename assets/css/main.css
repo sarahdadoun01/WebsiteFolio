@@ -4133,12 +4133,13 @@ input, select, textarea {
 
     /* About & services */
 
-    .section-about .description, .section-services .text {
-        font-size: 1em; /* Make text readable */
+    .section-about .description, .section-services .text { /* details under about title */
+        font-size: 1em;
         line-height: 1.5;
     }
 
-    .section-about .heading, .section-about .text{
+    
+    .section-about .heading, .section-about .text{ /* details in two sections*/
         font-size: 1.06em;
     }
 
@@ -4147,9 +4148,7 @@ input, select, textarea {
         text-align: center;
     }
 
-    .button {
-        width: 50%; /* Make button wider */
-    }
+    
 
     /* About section */
 
@@ -4173,12 +4172,18 @@ input, select, textarea {
 
     /* Services section */   
 
+    .services .heading{
+        font-size: 1.5em;
+        
+    }
+
     .section-title{
-        font-size: 2em;
+        /* font-size: 1.5em; */
+        font-size: 5em;
     }
 
     .service-list h2{
-        font-size: 2em;
+        font-size: 3em;
     }
 
     
