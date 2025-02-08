@@ -3958,43 +3958,41 @@ input, select, textarea {
         }
         
 
-
-
    /* ================================
-   Custom Styles - About Me Section
+   Custom Styles - Title Sections
    ================================ */
 
-.section-about {
+.title-section{
     background-color: #292929;
     text-align: center;
-    padding: 0 0 8em;
+    padding: 8em 0 3em;
+    
 }
 
-    .section-about .container{
-        padding: 8em 0 3em;
-        border-top: 1px solid #373737;
-    }
+.title-section-heading{
+    font-size: 2em;
+    color: #9a99ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
-        .section-about .heading {
-            font-size: 2em;
-            color: #9a99ff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+.title-section-title{
+    font-size: 3em;
+    color: #fff;
+    font-weight: bold;
+}
 
-        .section-about .title {
-            font-size: 3em;
-            color: #fff;
-            font-weight: bold;
-        }
-
-.section-about .description {
+.title-section-description{
     max-width: 37.5em;
     margin: 1.25em auto;
     font-size: 1em;
     color: var(--text-color, #e6db74);
     font-family: var(--body-font, "Fira Code", sans-serif);
 }
+
+   /* ================================
+   Custom Styles - About Me Section
+   ================================ */
 
 .section-details {
     display: flex;
@@ -4042,43 +4040,70 @@ input, select, textarea {
     padding: 0 0 5em 0;
 }
 
+/* ================================
+            Portfolio
+   ================================ */
+.section-portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #373737;
+    padding-bottom: 8em;
+}
+
+.container-preview{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+
+    background: transparent;
+    
+    border-top: 1px solid #3e3e3e;
+    min-width: 80%;
+    max-width: 80%;
+
+    /* justify-content: center; */
+    /* align-content: center; */
+}
+
+.preview-graphic, .preview-dev{
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    max-width: 50%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+
+.preview-graphic{
+    padding: 5em;
+}
+
+.dev-soft, .dev-web{
+    padding: 5em;
+
+}
+
+.preview-dev{
+    border-left: 1px solid #3e3e3e;
+}
+
+.dev-web{
+    border-top: 1px solid #3e3e3e;
+}
+
 
 /* ================================
-   Services Section (Matching Site Style)
+            Services Section
    ================================ */
 
 .services {
-    padding: 5em 0; /* Matches spacing using em */
     background: transparent; /* Consistent with other sections */
     text-align: center;
     border-bottom: 1px solid #3e3e3e;
-}
-
-.services .heading{
-    font-size: 2em;
-    color: #9a99ff;
-}
-.services .section-heading {
-    font-size: 1.125em;
-    color: var(--secondary-color, #fff);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-family: var(--mono-font, "Fira Code", monospace);
-}
-
-.services .section-title {
-    font-size: 3em;
-    color: var(--primary-color, #fff);
-    font-weight: bold;
-    font-family: "VT323", sans-serif; 
-}
-
-.services .description {
-    max-width: 37.5em;
-    margin: 1.25em auto;
-    font-size: 1em;
-    color: #e6db74;
-    font-family: var(--body-font, "Fira Code", sans-serif);
+    border-top: 1px solid #3e3e3e;
 }
 
 .service-list {
@@ -4125,6 +4150,9 @@ input, select, textarea {
         width: 100%; /* Full width on smaller screens */
     }
 }
+
+
+
 
 /* Adjusts layout for mobile devices */
 @media screen and (max-width: 768px) {
