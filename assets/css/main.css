@@ -3990,9 +3990,14 @@ input, select, textarea {
     font-family: var(--body-font, "Fira Code", sans-serif);
 }
 
-   /* ================================
+
+
+
+
+
+/* ================================
    Custom Styles - About Me Section
-   ================================ */
+=================================== */
 
 .section-details {
     display: flex;
@@ -4094,6 +4099,21 @@ input, select, textarea {
     border-top: 1px solid #3e3e3e;
 }
 
+.container-preview h5{
+    font-size: 1.8em;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+/* Images */
+
+figure img{
+    width: 250px;
+}
 
 /* ================================
             Services Section
@@ -4104,6 +4124,7 @@ input, select, textarea {
     text-align: center;
     border-bottom: 1px solid #3e3e3e;
     border-top: 1px solid #3e3e3e;
+    padding-bottom: 8em;
 }
 
 .service-list {
