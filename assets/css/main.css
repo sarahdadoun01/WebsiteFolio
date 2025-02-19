@@ -4060,35 +4060,50 @@ input, select, textarea {
     display: flex;
     flex-direction: row;
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
 
     background: transparent;
     
     border-top: 1px solid #3e3e3e;
     min-width: 80%;
-    max-width: 80%;
+    max-width: 80%
+}
 
-    /* justify-content: center; */
-    /* align-content: center; */
+.portitem{
+    /* max-width: 200px; */
+    max-width: 20em;
 }
 
 .preview-graphic, .preview-dev{
     display: flex;
     flex-direction: column;
+    align-content: space-around;
+    
     min-width: 50%;
     max-width: 50%;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-content: center; */
 }
 
-.preview-graphic{
-    padding: 5em;
+.preview-graphic, .dev-soft, .dev-web{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    gap: 40px;
 }
 
 .dev-soft, .dev-web{
     padding: 5em;
 
+}
+
+.preview-graphic{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    gap: 40px;
 }
 
 .preview-dev{
@@ -4112,7 +4127,7 @@ figcaption {
 /* Images */
 
 figure img{
-    width: 250px;
+    width: 100%;
 }
 
 /* ================================
