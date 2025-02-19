@@ -4070,8 +4070,10 @@ input, select, textarea {
 }
 
 .portitem{
-    /* max-width: 200px; */
-    max-width: 20em;
+    min-width: 100px;
+    /* width: 150px; */
+    max-width: 200px;
+    /* max-width: 20em; */
 }
 
 .preview-graphic, .preview-dev{
