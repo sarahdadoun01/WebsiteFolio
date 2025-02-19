@@ -1,0 +1,47 @@
+@import url(main.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Press+Start+2P&display=swap');
+
+
+
+
+.section-languages, .section-platforms {
+    text-align: center;
+    padding: 20px;
+}
+
+.language-list, .platform-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.language-list li, .platform-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #292929;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.platform-list img, .language-list img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+    filter: grayscale(100%); /* Converts images to grayscale */
+    transition: filter 0.3s ease-in-out;
+}
+
+.platform-list li:hover img, .language-list li:hover img {
+    filter: grayscale(0%); /* Restores original color on hover */
+}

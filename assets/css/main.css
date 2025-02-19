@@ -4076,6 +4076,13 @@ input, select, textarea {
     /* max-width: 20em; */
 }
 
+.portitem img {
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures images are cropped if needed */
+    max-width: 200px; /* Matches the max width of .portitem */
+}
+
 .preview-graphic, .preview-dev{
     display: flex;
     flex-direction: column;
@@ -4095,7 +4102,6 @@ input, select, textarea {
 
 .dev-soft, .dev-web{
     padding: 5em;
-
 }
 
 .preview-graphic{
@@ -4106,6 +4112,8 @@ input, select, textarea {
     justify-content: center;
     align-content: space-around;
     gap: 40px;
+    padding: 5em;
+
 }
 
 .preview-dev{
