@@ -129,7 +129,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 10pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -137,7 +137,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 8pt;
+				font-size: 10pt;
 			}
 
 		}
@@ -145,7 +145,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 8pt;
+				font-size: 10pt;
 			}
 
 		}
@@ -200,7 +200,7 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 2.75em;
+		font-size: 1.75em;
 	}
 
 	h3 {
@@ -3957,9 +3957,9 @@ input, select, textarea {
         }
         
 
-   /* ================================
+/* ================================
    Custom Styles - Title Sections
-   ================================ */
+================================ */
 
 .title-section{
     background-color: #292929;
@@ -3969,7 +3969,7 @@ input, select, textarea {
 }
 
 .title-section-heading{
-    font-size: 2em;
+    font-size: 1.2em;
     color: #9a99ff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -4050,7 +4050,7 @@ input, select, textarea {
 
 /* ================================
             Portfolio
-   ================================ */
+================================ */
 .section-portfolio{
     display: flex;
     flex-direction: column;

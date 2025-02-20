@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Press+Start+2P&display=swap');
 
-
+body h2 {
+    font-size: 6em !important;
+}
 
 /*----------------------------
           About Me
@@ -14,42 +16,42 @@
 .title-about-page-section{
     padding-top: 1em;
 }
-
+/* 
 .inner-about-description{
     height: 80em;
     display: flex;
     flex-direction: column;
-    position: relative; /* keeps inner elements contained */
+    position: relative; 
     gap: 2em;
 }
 
-/* Container that scrolls with the page */
+
 .profile-image-container {
-    width: 100%; /* Matches .inner-about-description */
-    height: 60%; /* 50% of .inner-about-description */
+    width: 100%; 
+    height: 60%; 
     position: relative;
-    overflow: hidden; /* Clips the fixed image */
-    z-index: 2; /* Ensures it stays above the content */
+    overflow: hidden; 
+    z-index: 2;
 }
 
-/* Wrapper to hold the fixed image */
+
 .profile-image-wrapper {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 3; /* Keeps it above other elements */
+    z-index: 3;
 }
 
-/* The fixed image itself */
+
 .profile-image {
     position: fixed;
     width: 60%;
     height: 50%;
     object-fit: cover;
-    z-index: 4; /* Ensures it remains visible inside the container */
-}
+    z-index: 4; 
+} */
 
 /*----------------------------
           Code Block
@@ -93,6 +95,7 @@
 }
 
 .blue {
+    font-weight: bold;
     color: #569cd6; /* Blue for keywords (class) */
 }
 
@@ -106,6 +109,7 @@
 
 .green {
     color: #b5cea8; /* Green for values (1, "Sarah", "Dadoun", array items) */
+    color: #FFEA00;
 }
 
 .code-block::before {
