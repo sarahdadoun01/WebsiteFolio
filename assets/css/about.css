@@ -4,15 +4,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Press+Start+2P&display=swap');
 
 
+
+/*----------------------------
+          About Me
+------------------------------*/
+
 .inner-about-description{
-    height: 50em;
+    height: 80em;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* keeps inner elements contained */
+    gap: 2em;
 }
 
-.section-languages {
-    text-align: center;
-    border-bottom: 1px solid #3e3e3e;
+/* Container that scrolls with the page */
+.profile-image-container {
+    width: 100%; /* Matches .inner-about-description */
+    height: 60%; /* 50% of .inner-about-description */
+    position: relative;
+    overflow: hidden; /* Clips the fixed image */
+    z-index: 2; /* Ensures it stays above the content */
+}
+
+/* Wrapper to hold the fixed image */
+.profile-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3; /* Keeps it above other elements */
+}
+
+/* The fixed image itself */
+.profile-image {
+    position: fixed;
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+    z-index: 4; /* Ensures it remains visible inside the container */
+}
+
+/*----------------------------
+          Code Block
+------------------------------*/
+
+.code-block {
+    width: 100%;
+    height: 50em;
+    background-color: #1e1e1e; /* Dark coding background */
+    color: #dcdcdc; /* Default text color */
+    font-family: "Fira Code", monospace; /* Monospace font for coding */
+    padding: 30px;
+    border-radius: 8px;
+    font-size: 1em;
+    white-space: pre-wrap;
+    line-height: 2.5;
+    overflow-x: auto;
+    
+}
+
+.code-block span {
+    display: inline-block; /* Ensures proper alignment */
+    text-indent: 0; /* Prevents extra indentation */
+    /* padding: 30px; */
+}
+
+.code-block .description {
+    display: block; /* Makes the text appear on a new line */
+    margin-left: 4em; /* Aligns it properly under "lastName =" */
+    white-space: pre-wrap; /* Ensures long text wraps correctly */
+    max-width: 80%; /* Prevents text from stretching too far */
+}
+
+.code-block .blue {
+    color: #569cd6; /* Blue color for class */
+}
+
+.code-block .gray {
+    color: #858585; /* Gray color for private */
+}
+
+.blue {
+    color: #569cd6; /* Blue for keywords (class) */
+}
+
+.gray {
+    color: #858585; /* Gray for access modifiers (private) */
+}
+
+.purple {
+    color: #c586c0; /* Purple for data types (int, string, string[]) */
+}
+
+.green {
+    color: #b5cea8; /* Green for values (1, "Sarah", "Dadoun", array items) */
+}
+
+.code-block::before {
+    content: "Profile.java"; /* Simulates a filename */
+    display: block;
+    font-size: 0.9em;
+    color: #858585;
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+
+.code-block::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome & Safari */
+}
+
+
+
+/*----------------------------
+          Languages
+------------------------------*/
+
+.section-languages{
     border-top: 1px solid #3e3e3e;
-    padding-bottom: 3em;
+    border-bottom: 1px solid #3e3e3e;
+    padding-bottom: 5em;
 }
 
 .languages{
@@ -25,7 +136,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    gap: 15px;
+    gap: 1px;
 }
 
 .language-list li, .platform-list li {
@@ -69,6 +180,4 @@ img[alt="Java Logo"] {
 img[alt="AWS Logo"] {
     filter: grayscale(100%) brightness(220%) contrast(90%);
 }
-
-
 

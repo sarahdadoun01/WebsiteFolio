@@ -2174,7 +2174,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 50%;
+			max-width: 30%;
 		}
 
 			.image.left img, .image.right img {
@@ -3998,12 +3998,16 @@ input, select, textarea {
    Custom Styles - About Me Section
 =================================== */
 
+.section-about{
+    border-top: 1px solid #3e3e3e;
+}
+
 .section-details {
     display: flex;
     flex-wrap: row;
     justify-content: center;
     background-color: #292929;
-
+    
 }
 
     .section-details .column:first-of-type{
