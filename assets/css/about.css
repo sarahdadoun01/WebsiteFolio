@@ -4,11 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Press+Start+2P&display=swap');
 
 
+.inner-about-description{
+    height: 50em;
+}
 
-
-.section-languages, .section-platforms {
+.section-languages {
     text-align: center;
-    padding: 20px;
+    border-bottom: 1px solid #3e3e3e;
+    border-top: 1px solid #3e3e3e;
+    padding-bottom: 3em;
+}
+
+.languages{
+    padding: 3em 0 3em;
 }
 
 .language-list, .platform-list {
@@ -16,7 +24,7 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     gap: 15px;
 }
 
@@ -42,6 +50,25 @@
     transition: filter 0.3s ease-in-out;
 }
 
+.other-languages{
+    padding: 5em;
+}
+
 .platform-list li:hover img, .language-list li:hover img {
     filter: grayscale(0%); /* Restores original color on hover */
 }
+
+img[alt="Django Logo"]{
+    filter: grayscale(100%) brightness(500%) contrast(90%);
+}
+
+img[alt="Java Logo"] {
+    filter: grayscale(100%) brightness(220%) contrast(90%);
+}
+
+img[alt="AWS Logo"] {
+    filter: grayscale(100%) brightness(220%) contrast(90%);
+}
+
+
+
