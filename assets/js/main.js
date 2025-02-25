@@ -335,63 +335,6 @@
 })(jQuery);
 
 // Contact Form
-// document.querySelector("form").addEventListener("submit", function(event) {
-//     event.preventDefault(); // Prevents default form submission
-
-//     let form = this;
-//     let formData = new FormData(form);
-
-//     fetch(form.action, {
-//         method: "POST",
-//         body: formData,
-//         headers: {
-//             "Accept": "application/json"
-//         }
-//     }).then(response => {
-//         if (response.ok) {
-//             alert("Thank you! Your message will be read as soon as possible.");
-//             form.reset();
-//         } else {
-//             alert("There was a problem trying to send your message. The error will be reported back to me. For now, email to sarahcdadoun@gmail.com or try this again later.");
-        
-//             // Send an error report to my email
-//             sendErrorReport(response.statusText);
-//         }
-//     }).catch(error => {
-//         alert("Error: " + error);
-
-//         // Send an error report to my email
-//         sendErrorReport(error);
-//     });
-// });
-
-// // Function to send error report to my email
-// function sendErrorReport(errorMessage) {
-//     let errorData = {
-//         subject: "Contact Form Submission Error",
-//         message: "An error occurred when someone tried to submit the contact form. \n\nError Details: " + errorMessage,
-//         email: "sarahcdadoun@gmail.com" // Replace with your email
-//     };
-
-//     fetch("https://formspree.io/f/mgvojdky", { 
-//         method: "POST",
-//         headers: {
-//             "Accept": "application/json",
-//             "Content-Type": "application/json"
-//         },
-//         body: JSON.stringify(errorData)
-//     }).then(response => {
-//         if (response.ok) {
-//             console.log("Error report sent successfully.");
-//         } else {
-//             console.log("Failed to send error report.");
-//         }
-//     }).catch(error => {
-//         console.log("Error sending error report: " + error);
-//     });
-// }
-
-//// NEW
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
     const messageContainer = document.createElement("div"); // Create message div
