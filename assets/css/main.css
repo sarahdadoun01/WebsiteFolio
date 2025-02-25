@@ -3335,7 +3335,7 @@ input, select, textarea {
 				}
 
 				#header nav a {
-					padding: 0 0.5em;
+					/* padding: 0 0.5em; */
 				}
 
 					#header nav a:last-child {
@@ -3380,7 +3380,7 @@ input, select, textarea {
 				}
 
 				#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
-					width: 4em;
+					width: 8em;
 					right: 0;
 				}
 
