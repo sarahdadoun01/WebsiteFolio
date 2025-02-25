@@ -4078,15 +4078,16 @@ input, select, textarea {
             Portfolio
 ================================ */
 
-/* @media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) {
     .section-portfolio-mobile {
         display: none !important;
     }
-} */
+}
 
 .section-portfolio{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border-top: 1px solid #373737;
     padding-bottom: 8em;
@@ -4097,6 +4098,8 @@ input, select, textarea {
     flex-direction: row;
     text-align: center;
     /* align-items: center; */
+justify-content: center;
+align-content: center;
 
     background: transparent;
     
