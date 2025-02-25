@@ -4062,6 +4062,13 @@ input, select, textarea {
 /* ================================
             Portfolio
 ================================ */
+
+/* @media screen and (min-width: 769px) {
+    .section-portfolio-mobile {
+        display: none !important;
+    }
+} */
+
 .section-portfolio{
     display: flex;
     flex-direction: column;

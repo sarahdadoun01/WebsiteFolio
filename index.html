@@ -8,15 +8,21 @@
 
 <head>
     <title>Sarah's Folio</title>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;
-    font-src 'self' https://fonts.gstatic.com;">
+    default-src 'self' https://unpkg.com https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com;
+    style-src 'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com https://fonts.gstatic.com;
+    script-src 'self' https://unpkg.com https://cdnjs.cloudflare.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com data:;
+    img-src 'self' data:;">
 
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
     <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
@@ -214,13 +220,23 @@
 
         <!-- Mobile Portfolio Carousel (Hidden by Default, Shown via JavaScript) -->
         <section class="section-portfolio-mobile" id="portfolio-mobile" style="display: none;">
+
+            <!-- Title Section -->
+            <div href="portfolio.html" class="title-section">
+                <h5 class="title-section-heading">{!}</h5>
+                <h2 class="title-section-title">&lt;projects&gt;</h2>
+                <p class="title-section-description">//...Some education in Interior Design, completed a degree in Graphic Design, on
+                    my way to finishing Computer Science Programming.
+                </p>
+            </div>
+
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <!-- Slides will be added dynamically via JavaScript -->
                 </div>
                 <div class="swiper-pagination"></div> <!-- Dots -->
-                <div class="swiper-button-next"></div> <!-- Next -->
-                <div class="swiper-button-prev"></div> <!-- Prev -->
+                <!-- <div class="swiper-button-next"></div> Next -->
+                <!-- <div class="swiper-button-prev"></div> Prev -->
             </div>
         </section>
 
@@ -347,7 +363,8 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
 </body>
 
 </html>

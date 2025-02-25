@@ -1,0 +1,57 @@
+/* Portfolio Section Mobile */
+
+@media screen and (max-width: 768px) {
+    .section-portfolio {
+        display: none; /* Hides desktop portfolio on mobile */
+    }
+}
+
+.swiper-container {
+    padding: 5em; /* Add padding here instead of .swiper-wrapper */
+}
+
+
+/* Make sure the carousel container is positioned correctly */
+.section-portfolio-mobile {
+    position: relative; /* Ensures child elements stay within */
+    overflow: hidden; /* Prevents overflow into other sections */
+    padding-bottom: 3em; /* Adds space for dots */
+    border-top: 1px solid #373737;
+}
+
+
+/* Fix navigation arrows positioning */
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensures arrows appear on top */
+    color: #e6db74  !important; /* Adjust color for visibility */
+}
+
+/* Fix dots (pagination) positioning */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Keeps dots below the carousel */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* Change inactive dot color */
+.swiper-pagination-bullet {
+    background-color: #9a99ff !important;  /* Change this to your preferred color */
+    opacity: 0.5; /* Makes inactive dots less prominent */
+    width: 10px; /* Adjust size */
+    height: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Change active dot color */
+.swiper-pagination-bullet-active {
+    background-color: #e6db74 !important;
+    opacity: 1;
+}
+
