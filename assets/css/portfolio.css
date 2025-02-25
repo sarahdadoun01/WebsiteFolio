@@ -8,15 +8,28 @@
 
 .swiper-container {
     padding: 5em; /* Add padding here instead of .swiper-wrapper */
+    padding-bottom: 3em; /* Adjust content spacing inside */
 }
 
 
 /* Make sure the carousel container is positioned correctly */
-.section-portfolio-mobile {
-    position: relative; /* Ensures child elements stay within */
-    overflow: hidden; /* Prevents overflow into other sections */
-    padding-bottom: 0em; /* Adds space for dots */
+/* .section-portfolio-mobile {
+    position: relative; 
+    overflow: hidden; 
+    padding-bottom: 0em;
     border-top: 1px solid #373737;
+    padding-bottom: 8em;
+} */
+
+.section-portfolio-mobile {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #373737;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content stays above the dots */
+    height: auto; /* Ensures it adapts to content */
+    padding-bottom: 8em; /* Only affects content, not dots */
 }
 
 
@@ -34,7 +47,7 @@
 /* Fix dots (pagination) positioning */
 .swiper-pagination {
     position: absolute;
-    bottom: 10px; /* Keeps dots below the carousel */
+    bottom: 20px; /* Keeps dots below the carousel */
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;

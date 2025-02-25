@@ -3326,7 +3326,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 2.75em;
+				height: 4em;
 				line-height: 2.75em;
 			}
 
@@ -3334,8 +3334,17 @@ input, select, textarea {
 					padding: 0 1em;
 				}
 
+                .logo img {
+                    margin-top: 5px;
+                    height: 3em;
+                    width: 3em;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                }
+
 				#header nav a {
-					/* padding: 0 0.5em; */
+					padding: 0 0.5em;
 				}
 
 					#header nav a:last-child {
@@ -3777,7 +3786,7 @@ input, select, textarea {
 
 				#wrapper > * > .inner {
 					padding: 3em 0 1em 0 ;
-					width: calc(100% - 3em);
+					width: calc(100% - 5em);
 				}
 
 			}
@@ -4000,7 +4009,13 @@ input, select, textarea {
     font-family: var(--body-font, "Fira Code", sans-serif);
 }
 
+@media screen and (max-width: 1024px) {
 
+    .title-section-description{
+        padding: 0 2em 0em 2em;
+    }
+
+}
 
 
 
@@ -4259,8 +4274,12 @@ figure img{
             padding: 0;
         }
 
-        .section-details .column{
-            padding: 2em 2em 2em 2em;
+        .section-details > .column1{
+            padding: 2em 2em 2em 0em;
+        }
+
+        .section-details > .column2{
+            padding: 2em 0em 2em 2em !important;
         }
 
         
