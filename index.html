@@ -102,7 +102,7 @@
 
         </section>
 
-        <!-- Portfolio -->
+        <!-- Desktop Portfolio (Hidden on Mobile) -->
         <section class="section-portfolio" id="portfolio">
 
             <!-- Title Section -->
@@ -211,6 +211,20 @@
             </div>
         </section>
 
+
+        <!-- Mobile Portfolio Carousel (Hidden by Default, Shown via JavaScript) -->
+        <section class="section-portfolio-mobile" id="portfolio-mobile" style="display: none;">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slides will be added dynamically via JavaScript -->
+                </div>
+                <div class="swiper-pagination"></div> <!-- Dots -->
+                <div class="swiper-button-next"></div> <!-- Next -->
+                <div class="swiper-button-prev"></div> <!-- Prev -->
+            </div>
+        </section>
+
+
         <!-- Services -->
         <section class="services">
             <!-- Title Section -->
@@ -255,26 +269,6 @@
         <section id="contact" href="#targetElement">
             <div class="inner">
                 <section>
-                    <!-- <form method="post" action="#">
-                        <div class="fields">
-                            <div class="field half">
-                                <label for="name">name*</label>
-                                <input type="text" name="name" id="name" />
-                            </div>
-                            <div class="field half">
-                                <label for="email">email*</label>
-                                <input type="text" name="email" id="email" />
-                            </div>
-                            <div class="field">
-                                <label for="message">message*</label>
-                                <textarea name="message" id="message" rows="6"></textarea>
-                            </div>
-                        </div>
-                        <ul class="actions">
-                            <li><input type="submit" value="Send Message" class="primary" /></li>
-                            <li><input type="reset" value="Clear" /></li>
-                        </ul>
-                    </form> -->
 
                     <form method="POST" action="https://formspree.io/f/mgvojdky">
                         <div class="fields">
@@ -296,9 +290,6 @@
                             <li><input type="reset" value="Clear" /></li>
                         </ul>
                     </form>
-                    
-                    
-
                 </section>
                 <section class="split">
                     <section>
