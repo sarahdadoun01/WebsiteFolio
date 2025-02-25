@@ -4281,6 +4281,10 @@ figure img{
         font-size: 3em;
     }
 
+    .service-item{
+        font-size: 2em !important;
+    }
+
     
 }
 

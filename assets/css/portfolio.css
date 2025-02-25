@@ -15,7 +15,7 @@
 .section-portfolio-mobile {
     position: relative; /* Ensures child elements stay within */
     overflow: hidden; /* Prevents overflow into other sections */
-    padding-bottom: 3em; /* Adds space for dots */
+    padding-bottom: 0em; /* Adds space for dots */
     border-top: 1px solid #373737;
 }
 
@@ -42,15 +42,17 @@
 
 /* Change inactive dot color */
 .swiper-pagination-bullet {
+    margin: 0 6px !important;
     background-color: #9a99ff !important;  /* Change this to your preferred color */
-    opacity: 0.5; /* Makes inactive dots less prominent */
-    width: 10px; /* Adjust size */
-    height: 10px;
+    opacity: 0.5;
+    width: 15px !important; /* Adjust size */
+    height: 15px !important;
     transition: opacity 0.3s ease-in-out;
 }
 
 /* Change active dot color */
 .swiper-pagination-bullet-active {
+    margin: 0 6px !important;
     background-color: #e6db74 !important;
     opacity: 1;
 }
