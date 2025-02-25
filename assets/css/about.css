@@ -166,7 +166,7 @@ body h2 {
     font-size: 1.2em;
     font-weight: bold;
     width: 120px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; 
 }
 
 .platform-list img, .language-list img{
