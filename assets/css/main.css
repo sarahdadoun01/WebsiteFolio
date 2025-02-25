@@ -119,12 +119,23 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "VT323", sans-serif;
+		font-family: "VT323", sans-serif !important;
 		font-size: 14pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
 		line-height: 1.65;
 	}
+
+    input[type="submit"],
+    button {
+        color: #ffffff;
+		font-family: "VT323", sans-serif !important;
+		font-size: 14pt;
+		font-weight: 300;
+		letter-spacing: 0.025em;
+		line-height: 1.65;
+}
+
 
 		@media screen and (max-width: 1680px) {
 
